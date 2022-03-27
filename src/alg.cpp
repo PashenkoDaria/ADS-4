@@ -33,25 +33,21 @@ while (tf) {
 mid = (left + right) / 2;
 if (value - arr[i] < arr[mid]) {
 right = mid - 1;
-}
-else if (value - arr[i] > arr[mid]) {
+} else if (value - arr[i] > arr[mid]) {
 left = mid + 1;
-}
-else {
+} else {
 count += 1;
 for (int k = 1; k < len; k++) {
 if (arr[mid + k] == arr[mid]) {
 count += 1;
-}
-else {
+} else {
 break;
 }
 }
 for (int k = 1; k < len - mid; k++) {
 if (arr[mid - k] == arr[mid]) {
 count += 1;
-}
-else {
+} else {
 break;
 }
 }
