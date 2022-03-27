@@ -1,3 +1,4 @@
+// Copyright 2021 NNTU-CS
 int binar(int *arr, int l, int r, int a) {
     int left = l, right = r, mid = 0; bool f = 0;
     while (left <= right)  {
